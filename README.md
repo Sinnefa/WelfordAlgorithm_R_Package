@@ -19,5 +19,9 @@ x$push(4)
 x$pushList(c(3,6.5,4))
 x
 y <- x$getDataValues()
+y
 print(x$numDataValues())
+print(x$mean())
+print(x$standardDeviation())
+print(x$variance())
 ```
