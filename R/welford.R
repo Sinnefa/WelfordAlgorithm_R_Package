@@ -5,7 +5,7 @@ if(length(new.packages)) install.packages(new.packages)
 library(R6)
 #' Welford Algorithm for Incremental Mean, Variance e Standard Deviation
 #'
-#' @description It handles a stream of numbers and computs descriptive values without a prior knowledge of how many values you have.
+#' @description It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
 #' It basically computers values coming from a stream of numbers.
 #' @docType class
 #' @importFrom R6 R6Class
