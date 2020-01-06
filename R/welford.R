@@ -6,7 +6,8 @@ library(R6)
 #' Welford Algorithm for Incremental Mean, Variance e Standard Deviation
 #'
 #' @description It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
-#' It basically computers values coming from a stream of numbers.
+#' It basically computers values coming from a stream of numbers. 06 - January - 2020
+#' @author Alberto Calderone <sinnefa@gmail.com>
 #' @docType class
 #' @importFrom R6 R6Class
 #' @export

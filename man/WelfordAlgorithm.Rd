@@ -6,8 +6,8 @@
 \title{Welford Algorithm for Incremental Mean, Variance e Standard Deviation}
 \format{An \code{\link{R6Class}} object}
 \description{
-It handles a stream of numbers and computs descriptive values without a prior knowledge of how many values you have.
-It basically computers values coming from a stream of numbers.
+It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
+It basically computers values coming from a stream of numbers. 06 - January - 2020
 }
 \examples{
 x <- WelfordAlgorithm$new()
@@ -15,8 +15,15 @@ x$push(4)
 x$pushList(c(3,6.5,4))
 x
 y <- x$getDataValues()
+y
 print(x$numDataValues())
+print(x$mean())
+print(x$standardDeviation())
+print(x$variance())
 
+}
+\author{
+Alberto Calderone <sinnefa@gmail.com>
 }
 \section{Methods}{
 \subsection{Public methods}{
