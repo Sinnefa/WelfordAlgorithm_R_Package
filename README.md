@@ -5,8 +5,7 @@ It handles a stream of numbers and computes descriptive values without a prior k
 
 # How to Install
 
-The preferred way to install this package is through conda:
-
+The preferred way to install this package:
 ```
 install.packages("devtools")
 devtools::install_github("Sinnefa/WelfordAlgorithm_R_Package")
