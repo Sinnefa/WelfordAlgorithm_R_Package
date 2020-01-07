@@ -32,16 +32,19 @@ WelfordAlgorithm <- R6Class(
     oldMean = NULL,
     newMean = NULL,
     oldStandardDeviation = NULL,
-    newStandardDeviation = NULL),
+    newStandardDeviation = NULL,
+    keep = NULL),
   public = list(
     #' @description Object initialization
-    initialize = function() {
+    #' @param keep Keeps all values in memory. Default is FALSE to save memory.
+    initialize = function(keep=F) {
       private$values <- c()
       private$numberOfValues <- 0
       private$oldMean <- 0
       private$newMean <- 0
       private$oldStandardDeviation <- 0
       private$newStandardDeviation <- 0
+      private$keep <- keep
     },
     #' @description Empties out the list of values and resets all calculations
     clear = function() {
@@ -54,8 +57,10 @@ WelfordAlgorithm <- R6Class(
       private$newStandardDeviation <- 0
     },
     #' @description Pushes one single element in the stream
+    #' @param x The value to push in the stream
     push = function(x) {
-      private$values <- c(private$values,x)
+      if (private$keep)
+        private$values <- c(private$values,x)
       private$numberOfValues <- private$numberOfValues + 1
       if (private$numberOfValues == 1) {
         private$oldMean <- x
@@ -69,13 +74,17 @@ WelfordAlgorithm <- R6Class(
       }
     },
     #' @description Pushes a list of values in the stream
+    #' @param l The list to push in the stream
     pushList = function(l) {
       for (x in l)
         self$push(x)
     },
     #' @description Returns a vector of values
     getDataValues = function() {
-      return <- private$values
+      if (private$keep)
+        return <- private$values
+      else
+        return <- NULL
     },
     #' @description Return the number of values processed so far
     numDataValues = function() {

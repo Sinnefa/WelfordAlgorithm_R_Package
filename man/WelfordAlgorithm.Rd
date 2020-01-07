@@ -46,9 +46,16 @@ Alberto Calderone <sinnefa@gmail.com>
 \subsection{Method \code{new()}}{
 Object initialization
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new()}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new(keep = F)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{keep}}{Keeps all values in memory. Default is FALSE to save memory.}
+}
+\if{html}{\out{</div>}}
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-clear"></a>}}
@@ -67,6 +74,13 @@ Pushes one single element in the stream
 \if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$push(x)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{x}}{The value to push in the stream}
+}
+\if{html}{\out{</div>}}
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-pushList"></a>}}
@@ -76,6 +90,13 @@ Pushes a list of values in the stream
 \if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$pushList(l)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{l}}{The list to push in the stream}
+}
+\if{html}{\out{</div>}}
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-getDataValues"></a>}}
