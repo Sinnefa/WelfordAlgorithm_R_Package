@@ -3,7 +3,7 @@ Type: Package
 Title: Welford Algorithm for Incremental Mean, Variance and Standard Deviation
 Version: 1.0
 Author: Alberto Calderone
-Maintainer: The package maintainer <sinnefa@gmail.com>
+Maintainer: Alberto Calderone <sinnefa@gmail.com>
 Description: Welford Algorithm for Incremental Mean, Variance and Standard Deviation
 Imports: R6
 License: What license is it under?
