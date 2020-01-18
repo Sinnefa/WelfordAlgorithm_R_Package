@@ -3,7 +3,7 @@
 \docType{class}
 \name{WelfordAlgorithm}
 \alias{WelfordAlgorithm}
-\title{Welford Algorithm for Incremental Mean, Variance e Standard Deviation}
+\title{Welford Algorithm for Incremental Mean, Variance and Standard Deviation}
 \format{An \code{\link{R6Class}} object}
 \description{
 It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
