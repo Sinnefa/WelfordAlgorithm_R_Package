@@ -31,7 +31,7 @@ WelfordAlgorithm <- R6::R6Class(
   public = list(
     #' @description Object initialization
     #' @param keep Keeps all values in memory. Default is FALSE to save memory.
-    initialize = function(keep=F) {
+    initialize = function(keep = FALSE) {
       private$values <- c()
       private$numberOfValues <- 0
       private$oldMean <- 0

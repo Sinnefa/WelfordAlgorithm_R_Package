@@ -46,7 +46,7 @@ Alberto Calderone <sinnefa@gmail.com>
 \subsection{Method \code{new()}}{
 Object initialization
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new(keep = F)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new(keep = FALSE)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
