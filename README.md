@@ -17,6 +17,12 @@ This library has the following advantages
 3. Can be used wihtout known in advance the number of elements to process
 4. Garbage collector time minimized
 
+The following images show performances with the following imaginary data stream
+```
+size <- 100000
+values_in <- runif(size)
+```
+
 ## Welford approach performances
 ![Welford performances](/imgs/welford.png "Welford")
 
