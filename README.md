@@ -16,10 +16,10 @@ This library has the followin advantages
 2. Saves time
 3. Can be used wihtout known in advance the number of elements to process
 ## Welford approach performances
-(imgs/welford.png)
+![Welford performances](/imgs/welford.png "Welford")
 
 ## Standard approach performances
-(imgs/standard.png)
+![Standard performances](/imgs/standard.png "Standard")
 
 # Example
 
