@@ -18,9 +18,7 @@ profvis({
     count <- count + 1
   }
   mu <- total/count
-
-  num <- sum(sapply(values,diff,mu=mu))
-  sd <- sqrt(num/(size-1))
+  sd <- sqrt(sum(sapply(values,diff,mu=mu))/(size-1))
 })
 print(paste(mu,sd))
 
