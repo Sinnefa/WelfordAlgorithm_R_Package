@@ -10,6 +10,17 @@ The preferred way to install this package:
 install.packages("devtools")
 devtools::install_github("Sinnefa/WelfordAlgorithm_R_Package")
 ```
+# Performance
+This library has the followin advantages
+1. Saves memeory
+2. Saves time
+3. Can be used wihtout known in advance the number of elements to process
+## Welford approach performances
+(imgs/welford.png)
+
+## Standard approach performances
+(imgs/standard.png)
+
 # Example
 
 ```
