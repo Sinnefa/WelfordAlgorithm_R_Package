@@ -1,15 +1,9 @@
-list.of.packages <- c("R6")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
-
-library(R6)
-#' Welford Algorithm for Incremental Mean, Variance e Standard Deviation
+#' Welford Algorithm for Incremental Mean, Variance and Standard Deviation
 #'
 #' @description It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
 #' It basically computers values coming from a stream of numbers. 06 - January - 2020
-#' @author Alberto Calderone <sinnefa@gmail.com>
+#' @author Alberto Calderone <sinnefa@@gmail.com>
 #' @docType class
-#' @importFrom R6 R6Class
 #' @export
 #' @format An \code{\link{R6Class}} object
 #' @examples
@@ -24,7 +18,7 @@ library(R6)
 #' print(x$standardDeviation())
 #' print(x$variance())
 #'
-WelfordAlgorithm <- R6Class(
+WelfordAlgorithm <- R6::R6Class(
   "WelfordAlgorithm",
   private = list(
     values = NULL,
@@ -37,7 +31,7 @@ WelfordAlgorithm <- R6Class(
   public = list(
     #' @description Object initialization
     #' @param keep Keeps all values in memory. Default is FALSE to save memory.
-    initialize = function(keep=F) {
+    initialize = function(keep = FALSE) {
       private$values <- c()
       private$numberOfValues <- 0
       private$oldMean <- 0

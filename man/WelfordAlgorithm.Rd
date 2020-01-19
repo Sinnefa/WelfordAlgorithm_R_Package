@@ -3,7 +3,7 @@
 \docType{class}
 \name{WelfordAlgorithm}
 \alias{WelfordAlgorithm}
-\title{Welford Algorithm for Incremental Mean, Variance e Standard Deviation}
+\title{Welford Algorithm for Incremental Mean, Variance and Standard Deviation}
 \format{An \code{\link{R6Class}} object}
 \description{
 It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
@@ -46,7 +46,7 @@ Alberto Calderone <sinnefa@gmail.com>
 \subsection{Method \code{new()}}{
 Object initialization
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new(keep = F)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{WelfordAlgorithm$new(keep = FALSE)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
