@@ -3,6 +3,8 @@ rm(list=ls())
 size <- 100000
 values_in <- runif(size)
 
+## Compare performances between packages and standard approach
+
 ## Standard approach
 profvis({
   diff <- function(x, mu){

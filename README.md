@@ -1,6 +1,5 @@
 # Description
 Welford Algorithm for Incremental Mean, Variance and Standard Deviation.
-
 It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have. It basically computers values coming from a stream of numbers.
 
 # How to Install

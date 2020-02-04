@@ -1,7 +1,7 @@
 #' Welford Algorithm for Incremental Mean, Variance and Standard Deviation
 #'
-#' @description It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have.
-#' It basically computers values coming from a stream of numbers. 06 - January - 2020
+#' @description The package is meant to handle a stream of numbers and compute descriptive values without a prior knowledge of how many values you have.
+#' It basically computers numbers coming from a stream. 06 - January - 2020
 #' @author Alberto Calderone <sinnefa@@gmail.com>
 #' @docType class
 #' @export
