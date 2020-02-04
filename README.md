@@ -1,6 +1,6 @@
 # Description
 Welford Algorithm for Incremental Mean, Variance and Standard Deviation.
-It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have. It basically computers values coming from a stream of numbers.
+It handles a stream of numbers and computes descriptive values without a prior knowledge of how many values you have. It basically computes values coming from a stream of numbers.
 
 # How to Install
 
@@ -11,7 +11,7 @@ devtools::install_github("Sinnefa/WelfordAlgorithm_R_Package")
 ```
 # Performance
 This package has the following advantages
-1. Saves memeory
+1. Saves memory
 2. Saves time
 3. Can be used wihtout known in advance the number of elements to process
 4. Garbage collector time minimized
